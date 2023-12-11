@@ -1,9 +1,12 @@
-{% extends 'parent.htm' %}
+<!-- You must write def for extend of another html page at the first line only -->
+{% extends 'parent.htm' %} 
+{% load static %}
 {% block title %}
     <title>Child</title>
 {% endblock %}
 
 {% block body_block %}
-<h3>what is this</h3>
-<h5>How is this</h5>
+<center>
+    <img src="{% static 'images/cafe.jpg' %}"
+</center>
 {% endblock %}

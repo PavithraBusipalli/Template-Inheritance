@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,11 @@
 </head>
 <body>
 
-    
     {% block body_block %}
-    <h1>You</h1>
-    <h2>How</h2>
-    <h3>What</h3>
-    <h4>Why</h4>
-    <h5>How</h5>
-    {% endblock %}
-</body>
+    <center>
+        <img src="{% static 'images/abhi.jpg' %}">
+    </center>
+    {% endblock%}
+    
+</body> 
 </html>
